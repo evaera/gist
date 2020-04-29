@@ -146,7 +146,7 @@
     }
 
     function getCurrentGistID() {
-      return window.location.pathname;
+      return window.location.pathname.replace(/\/gist\//g, "");
     }
 
     marked.setOptions({
