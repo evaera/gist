@@ -218,6 +218,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       if (window.location.hash.length === 33) {
         window.location.href = `/gist/${window.location.hash.substr(1)}`
+        return
       }
       
       window.app.loadGist(getCurrentGistID())
